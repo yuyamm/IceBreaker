@@ -19,7 +19,7 @@ def ice_break_with(
     name: str,
 ) -> Tuple[Summary, TopicOfInterest, IceBreaker, str]:
     linkedin_username = linkedin_lookup_agent(name=name)
-    linkedin_data = scrape_linkedin_profile(linkedin_profile_url=linkedin_username)
+    linkedin_data = scrape_linkedin_profile(linkedin_profile_url=linkedin)
 
     twitter_username = twitter_lookup_agent(name=name)
     tweets = scrape_user_tweets_mock(username=twitter_username)
